@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>UNKNOWN MAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="UNKNOWN MAN"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="#K/D比">K/D比</a></li>
+<li><a href="#勝利数">勝利数</a></li>
+<li><a href="#チャンネル">チャンネル</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="K/D比">
+
+<h2>K/D比</h2>
+<div id="kd"></div>
+<script>
+const kdata = {
+    labels: ["12am-3am", "3am-6pm", "6am-9am", "9am-12am",
+        "12pm-3pm", "3pm-6pm", "6pm-9pm", "9am-12am"
+    ],
+    datasets: [
+        {
+            name: "Some Data", type: "bar",
+            values: [25, 40, 30, 35, 8, 52, 17, -4]
+        },
+        {
+            name: "Another Set", type: "line",
+            values: [25, 50, -10, 15, 18, 32, 27, 14]
+        }
+    ]
+}
+
+const kd = new frappe.Chart("#kd", {  // or a DOM element,
+                                            // new Chart() in case of ES6 module with above usage
+    title: "My Awesome Chart",
+    data: kdata,
+    type: 'axis-mixed', // 'axis-mixed' , 'bar', 'line', 'scatter', 'pie', 'percentage'
+    height: 250,
+    colors: ['#7cd6fd', '#743ee2']
+})
+</script>
+
+</section>
+<!--/#new-->
+
+<section id="勝利数">
+
+<h2>勝利数</h2>
+
+<div id="chart"></div>
+<script>
+const data = {
+    labels: ["12am-3am", "3am-6pm", "6am-9am", "9am-12am",
+        "12pm-3pm", "3pm-6pm", "6pm-9pm", "9am-12am"
+    ],
+    datasets: [
+        {
+            name: "Some Data", type: "bar",
+            values: [25, 40, 30, 35, 8, 52, 17, -4]
+        },
+        {
+            name: "Another Set", type: "bar",
+            values: [25, 50, -10, 15, 18, 32, 27, 14]
+        }
+    ]
+}
+
+const chart = new frappe.Chart("#chart", {  // or a DOM element,
+                                            // new Chart() in case of ES6 module with above usage
+    title: "My Awesome Chart",
+    data: data,
+    type: 'bar', // 'axis-mixed' , 'bar', 'line', 'scatter', 'pie', 'percentage'
+    height: 250,
+    colors: ['#7cd6fd', '#743ee2']
+})
+</script>
+
+</section>
+<!--/#company-->
+
+<section id="チャンネル">
+
+<h2>チャンネル</h2>
+
+<div class="list">
+<div class="youtube">
+<iframe width="949" height="534" src="https://www.youtube.com/embed/?list=UUEdHvFZQD4XJlAB89FmOCiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h4>ここの見出しのサイズは、cssフォルダのstyle.cssの「.list h4」で変更できます。</h4>
+<p>左の画像の幅もstyle.cssの「.list img」のwidthの数字で変更できます。</p>
+</div>
+
+<div class="list">
+<img src="images/sample4.jpg" alt="">
+<h4>見出しを入れます。</h4>
+<p>説明を入れます。</p>
+</div>
+
+<div class="list">
+<img src="images/sample4.jpg" alt="">
+<h4>見出しを入れます。</h4>
+<p>説明を入れます。</p>
+</div>
+
+<div class="list">
+<img src="images/sample4.jpg" alt="">
+<h4>見出しを入れます。</h4>
+<p>説明を入れます。</p>
+</div>
+
+<div class="list">
+<img src="images/sample4.jpg" alt="">
+<h4>見出しを入れます。</h4>
+<p>説明を入れます。</p>
+</div>
+
+</section>
+<!--/#service-->
+
+<section id="contact">
+
+<h2>Contact</h2>
+<p class="c">class="c" でセンター揃え</p>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCEdHvFZQD4XJlAB89FmOCiA" data-layout="full" data-theme="dark" data-count="hidden"></div>
+</section>
+
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="scroll"><a href="#">↑</a></p>
+<script src="js/scroll.js"></script>
+
+</body>
+</html>
