@@ -150,6 +150,7 @@ header #logo img {
 	line-height: 1.5;
 	border-bottom: 1px solid #111;	/*下線の幅、線種、色*/
 	padding: 20px;	/*ボックス内の余白*/
+	display: flex;
 }
 /*１番目のlistブロックへの追加指定。上に線を入れる。*/
 .list:first-of-type {
@@ -170,6 +171,7 @@ header #logo img {
 .list .youtube {
 	position: relative;
 	width: 40%;
+	height: 100%;
 	padding-top: 23%;
 }
 
@@ -180,13 +182,37 @@ header #logo img {
 	width: 100%;
 	height: 100%;
   }
-
-.list .g-ytsubscribe{
-	float: right;
-}
 /*段落タグ*/
 .list p {
 	padding: 0 !important;
+}
+
+#ytchalink{
+	margin: auto;
+	width: 20%;			/*画像幅*/
+	display: flex;
+	margin-left: 5%;
+	margin-right: 20%;
+}
+
+.trim-image-to-circle {
+    width: 80%;       /* ※縦横を同値に */
+    height: 80%;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: center center;  /* 横長画像の左上を基準に表示 */
+    display: inline-block;          /* 複数の画像を横に並べたい場合 */
+	max-width: 90px;
+}
+
+#ytchalink .text{
+	margin: auto;
+	margin-left: 40px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text h4{
+	font-size: 25px;
 }
 
 /*フッター設定
