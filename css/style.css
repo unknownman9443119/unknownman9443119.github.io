@@ -47,8 +47,8 @@ header {
 	height: 100%;
 	overflow: auto;
 	position: relative;
-	/* background: #111;  */
-	background: url(../images/mainimg.jpg) no-repeat center center / cover;
+	background: #111; 
+/* 	background: url(../images/mainimg.jpg) no-repeat center center / cover; */
 }
 /*ロゴ画像*/
 header #logo img {
