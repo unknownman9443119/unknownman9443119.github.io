@@ -37,5 +37,7 @@
 
 画像のサイズはある程度大きくないと上手く表示されないので気を付けてください
 
-画像のファイル名は`mainimg.jpg`uplodeする画像ファイルが`.jpg`でないならCSSで変更した場所を書き換える
+画像のファイル名は`mainimg.jpg`
+
+uplodeする画像ファイルが`.jpg`でないならCSSで変更した場所を書き換える
 ![スクリーンショット (1183)](https://user-images.githubusercontent.com/72436563/183263250-efb8ce4f-3579-4a31-ae98-93b810e20106.jpg)
