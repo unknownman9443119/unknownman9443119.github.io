@@ -212,7 +212,7 @@ header #logo img {
 	justify-content: center;
 }
 
-.g-ytsubscribe{
+.ytsub{
 	display: none;
 }
 
@@ -443,8 +443,9 @@ ol {
 	#ytchalink{
 		display: none;
 	}
-	.g-ytsubscribe{
+	.ytsub{
 		display: block;
+		margin-top: 10px;
 	}
 	.list{
 		line-height: 5.5;
