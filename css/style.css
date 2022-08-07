@@ -47,8 +47,8 @@ header {
 	height: 100%;
 	overflow: auto;
 	position: relative;
-	background: #111; 
-/* 	background: url(../images/mainimg.jpg) no-repeat center center / cover; */
+	background: url(../images/mainimg.jpg) no-repeat center center / cover;
+	/* background: #111; */
 }
 /*ロゴ画像*/
 header #logo img {
@@ -207,9 +207,13 @@ header #logo img {
 
 #ytchalink .text{
 	margin: auto;
-	margin-left: 40px;
+	margin-left: 10%;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.g-ytsubscribe{
+	display: none;
 }
 
 .text h4{
@@ -363,7 +367,15 @@ header #logo img {
 
 }
 
+/*画面幅560px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:560px){
 
+.text h4{
+font-size: 22px;
+}
+
+}
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -416,4 +428,27 @@ ol {
 .ws {width: 96%;}
 .big1 {font-size: 22px;letter-spacing: normal;}
 
+}
+
+/*画面幅380px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:380px){
+
+	.list .youtube {
+		position: relative;
+		width: 100%;
+		padding-top: 58%
+	}
+
+	#ytchalink{
+		display: none;
+	}
+	.g-ytsubscribe{
+		display: block;
+	}
+	.list{
+		line-height: 5.5;
+		align-items: center;
+		flex-direction: column;
+	}
 }
