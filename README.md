@@ -3,7 +3,7 @@
 ![スクリーンショット (1172)](https://user-images.githubusercontent.com/72436563/183288133-7cf7200f-5737-421f-a5e3-ad6e6cce7fcf.jpg)
 ![スクリーンショット (1174)](https://user-images.githubusercontent.com/72436563/183288134-67ede4ef-1861-43a1-a01f-0e69cf45d18f.jpg)
 ![スクリーンショット (1175)](https://user-images.githubusercontent.com/72436563/183288139-eef3e5ca-b774-48df-b8b1-d49da2e5940f.jpg)
-うえの写真から下の写真のように`/*``*/`を追加＆削除する
+うえの写真から下の写真のように`/*`，`*/`を追加＆削除する
 ![スクリーンショット (1176)](https://user-images.githubusercontent.com/72436563/183288140-daf985ef-832b-4a49-b97c-e345d402f753.jpg)
 ![スクリーンショット (1177)](https://user-images.githubusercontent.com/72436563/183288141-42dab463-ccbc-439c-b3bc-87596e56f2ca.jpg)
 ![スクリーンショット (1179)](https://user-images.githubusercontent.com/72436563/183288143-43c54e57-2c2c-4aad-9efc-141d2de24dcf.jpg)
