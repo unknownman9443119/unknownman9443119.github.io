@@ -45,14 +45,14 @@
 const kdata = {
     labels: ["2022-07-18","2022-07-22","2022-07-23","2022-07-24","2022-07-25",
              "2022-07-28","2022-07-29","2022-07-30","2022-07-31","2022-08-02",
-             "2022-08-06","2022-08-07"
+             "2022-08-06","2022-08-07","2022-08-08","2022-08-09","2022-08-10"
     ],
     datasets: [
         {
             name: "KDratio", type: "line",
             values: [2.21,2.21,2.21,2.21, 2.22,
                      2.23,2.23,2.23,2.23,2.24,
-                     2.24,2.25]
+                     2.24,2.25,2.26,2.26,2.27]
         }
     ]
 }
@@ -79,12 +79,12 @@ const kd = new frappe.Chart("#kd", {  // or a DOM element,
 const data = {
     labels: ["2022-07-18","2022-07-22","2022-07-23","2022-07-24","2022-07-25",
              "2022-07-28","2022-07-29","2022-07-30","2022-07-31","2022-08-02",
-             "2022-08-06","2022-08-07"
+             "2022-08-06","2022-08-07","2022-08-08","2022-08-09","2022-08-10"
     ],
     datasets: [
         {
             name: "Win of Day", type: "line",
-            values: [3, 5, 2, 2, 1, 10, 5, 3, 2, 2, 1, 5]
+            values: [3, 5, 2, 2, 1, 10, 5, 3, 2, 2, 1, 11, 6, 2, 2]
         }
     ]
 }
@@ -117,11 +117,17 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
                 <h4>UNKNOWN&nbsp;MAN</h4>
             </a></div>
     </div>
+    <div class="ytsub">
     <script src="https://apis.google.com/js/platform.js"></script>
     <div class="g-ytsubscribe" data-channelid="UCEdHvFZQD4XJlAB89FmOCiA" data-layout="full" data-theme="dark" data-count="hidden"></div>
+    </div>
 </div>
 
 <div class="list">
+    <a class="twitter-timeline" data-width="600" data-height="800" data-theme="dark" href="https://twitter.com/UNKNOWN82593971?ref_src=twsrc%5Etfw">Tweets by UNKNOWN82593971</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<!-- <div class="list">
 <img src="images/sample4.jpg" alt="">
 <h4>見出しを入れます。</h4>
 <p>説明を入れます。</p>
@@ -137,13 +143,7 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
 <img src="images/sample4.jpg" alt="">
 <h4>見出しを入れます。</h4>
 <p>説明を入れます。</p>
-</div>
-
-<div class="list">
-<img src="images/sample4.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
-</div>
+</div> -->
 
 </section>
 <!--/#service-->
@@ -151,7 +151,19 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
 <section id="contact">
 
 <h2>Contact</h2>
-<p class="c">class="c" でセンター揃え</p>
+<!-- <p class="c">class="c" でセンター揃え</p> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<ul class="follow-me">
+  <li><a href="https://twitter.com"></a></li>
+  <li><a href="https://www.facebook.com"></a></li>
+  <li><a href="https://plus.google.com"></a></li>
+  <li><a href="https://www.tumblr.com"></a></li>
+  <li><a href="https://getpocket.com"></a></li>
+  <li><a href="https://vine.co"></a></li>
+  <li><a href="https://www.youtube.com"></a></li>
+  <li><a href="/feed"></a></li>
+</ul>
 
 </section>
 
